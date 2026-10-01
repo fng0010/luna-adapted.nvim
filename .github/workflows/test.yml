@@ -1,0 +1,17 @@
+name: Test
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  neovim:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [v0.10.4, stable]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          version: ${{ matrix.version }}
+          neovim: true
+      - run: nvim --headless -u NONE -i NONE -l tests/theme.lua

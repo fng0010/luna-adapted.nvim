@@ -1,0 +1,31 @@
+# name = "luna-adapted-light"
+# author = "wtfox"
+
+palette = 0=#26262b
+palette = 1=#c04f4f
+palette = 2=#3f8f52
+palette = 3=#9c5f2a
+palette = 4=#2f6b9e
+palette = 5=#8559a0
+palette = 6=#2f6b9e
+palette = 7=#4d4d55
+palette = 8=#a0a0aa
+palette = 9=#e08585
+palette = 10=#6fbe80
+palette = 11=#d9a35a
+palette = 12=#8c9cb8
+palette = 13=#c4a8d6
+palette = 14=#75a1c7
+palette = 15=#16161a
+palette = 16=#8f8f99
+palette = 17=#9c5f2a
+palette = 18=#e6e4df
+palette = 19=#b9cde6
+palette = 20=#a0a0aa
+palette = 21=#4d4d55
+
+background = #faf8f4
+foreground = #16161a
+cursor-color = #16161a
+selection-background = #b9cde6
+selection-foreground = #16161a

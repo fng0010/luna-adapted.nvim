@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="663" viewBox="0 0 980 663">
+    <title>Luna Adapted (light) Neovim palette preview</title>
+    <desc>Lua source colored using Neovim syntax highlights, with Luna's orange, blue, violet and sage accents in the light variant.</desc>
+    <rect width="980" height="663" rx="12" fill="#faf8f4"/>
+    <path d="M12 0H968Q980 0 980 12V56H0V12Q0 0 12 0" fill="#eeece7"/>
+    <text x="30" y="35" fill="#26262b" font-family="system-ui, sans-serif" font-size="16" font-weight="600">luna-adapted.nvim · light</text>
+    <text x="830" y="35" fill="#74706b" font-family="system-ui, sans-serif" font-size="13">examples/luna.lua</text>
+    <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="16" xml:space="preserve">
+<text x="46" y="90" text-anchor="end" fill="#8f8a83" font-size="13">1</text>
+<text x="72" y="90"><tspan fill="#74706b">-- Luna Adapted: a little warmth on a quiet page.</tspan></text>
+<text x="46" y="115" text-anchor="end" fill="#8f8a83" font-size="13">2</text>
+<text x="72" y="115"><tspan fill="#a4512b">local</tspan><tspan fill="#26262b"> Moon </tspan><tspan fill="#575760">=</tspan><tspan fill="#26262b"> </tspan><tspan fill="#8559a0">{}</tspan></text>
+<text x="46" y="140" text-anchor="end" fill="#8f8a83" font-size="13">3</text>
+<text x="72" y="140"><tspan fill="#26262b">Moon.</tspan><tspan fill="#2f6b9e">__index</tspan><tspan fill="#26262b"> </tspan><tspan fill="#575760">=</tspan><tspan fill="#26262b"> Moon</tspan></text>
+<text x="46" y="165" text-anchor="end" fill="#8f8a83" font-size="13">4</text>
+<text x="72" y="165"></text>
+<text x="46" y="190" text-anchor="end" fill="#8f8a83" font-size="13">5</text>
+<text x="72" y="190"><tspan fill="#2f6b9e">function</tspan><tspan fill="#26262b"> Moon.new(name, phase)</tspan></text>
+<rect x="0" y="196" width="980" height="25" fill="#eeece7"/>
+<text x="46" y="215" text-anchor="end" fill="#8f8a83" font-size="13">6</text>
+<text x="72" y="215"><tspan fill="#26262b">  </tspan><tspan fill="#a4512b">return</tspan><tspan fill="#26262b"> setmetatable(</tspan><tspan fill="#8559a0">{</tspan></text>
+<text x="46" y="240" text-anchor="end" fill="#8f8a83" font-size="13">7</text>
+<text x="72" y="240"><tspan fill="#26262b">    name </tspan><tspan fill="#575760">=</tspan><tspan fill="#26262b"> name </tspan><tspan fill="#575760">or</tspan><tspan fill="#26262b"> </tspan><tspan fill="#526d3d">&quot;Luna&quot;</tspan><tspan fill="#26262b">,</tspan></text>
+<text x="46" y="265" text-anchor="end" fill="#8f8a83" font-size="13">8</text>
+<text x="72" y="265"><tspan fill="#26262b">    phase </tspan><tspan fill="#575760">=</tspan><tspan fill="#26262b"> phase </tspan><tspan fill="#575760">or</tspan><tspan fill="#26262b"> </tspan><tspan fill="#a4512b">0.75</tspan><tspan fill="#26262b">,</tspan></text>
+<text x="46" y="290" text-anchor="end" fill="#8f8a83" font-size="13">9</text>
+<text x="72" y="290"><tspan fill="#26262b">    visible </tspan><tspan fill="#575760">=</tspan><tspan fill="#26262b"> </tspan><tspan fill="#8559a0">true</tspan><tspan fill="#26262b">,</tspan></text>
+<text x="46" y="315" text-anchor="end" fill="#8f8a83" font-size="13">10</text>
+<text x="72" y="315"><tspan fill="#26262b">  </tspan><tspan fill="#8559a0">}</tspan><tspan fill="#26262b">, Moon)</tspan></text>
+<text x="46" y="340" text-anchor="end" fill="#8f8a83" font-size="13">11</text>
+<text x="72" y="340"><tspan fill="#2f6b9e">end</tspan></text>
+<text x="46" y="365" text-anchor="end" fill="#8f8a83" font-size="13">12</text>
+<text x="72" y="365"></text>
+<text x="46" y="390" text-anchor="end" fill="#8f8a83" font-size="13">13</text>
+<text x="72" y="390"><tspan fill="#2f6b9e">function</tspan><tspan fill="#26262b"> Moon:greet()</tspan></text>
+<text x="46" y="415" text-anchor="end" fill="#8f8a83" font-size="13">14</text>
+<text x="72" y="415"><tspan fill="#26262b">  </tspan><tspan fill="#a4512b">if</tspan><tspan fill="#26262b"> self.visible </tspan><tspan fill="#a4512b">then</tspan></text>
+<text x="46" y="440" text-anchor="end" fill="#8f8a83" font-size="13">15</text>
+<text x="72" y="440"><tspan fill="#26262b">    </tspan><tspan fill="#a4512b">return</tspan><tspan fill="#26262b"> string.format(</tspan><tspan fill="#526d3d">&quot;Hello, %s&quot;</tspan><tspan fill="#26262b">, self.name)</tspan></text>
+<text x="46" y="465" text-anchor="end" fill="#8f8a83" font-size="13">16</text>
+<text x="72" y="465"><tspan fill="#26262b">  </tspan><tspan fill="#a4512b">end</tspan></text>
+<text x="46" y="490" text-anchor="end" fill="#8f8a83" font-size="13">17</text>
+<text x="72" y="490"><tspan fill="#26262b">  </tspan><tspan fill="#a4512b">return</tspan><tspan fill="#26262b"> </tspan><tspan fill="#526d3d">&quot;See you at moonrise&quot;</tspan></text>
+<text x="46" y="515" text-anchor="end" fill="#8f8a83" font-size="13">18</text>
+<text x="72" y="515"><tspan fill="#2f6b9e">end</tspan></text>
+<text x="46" y="540" text-anchor="end" fill="#8f8a83" font-size="13">19</text>
+<text x="72" y="540"></text>
+<text x="46" y="565" text-anchor="end" fill="#8f8a83" font-size="13">20</text>
+<text x="72" y="565"><tspan fill="#a4512b">local</tspan><tspan fill="#26262b"> luna </tspan><tspan fill="#575760">=</tspan><tspan fill="#26262b"> Moon.new(</tspan><tspan fill="#526d3d">&quot;Crescent&quot;</tspan><tspan fill="#26262b">, </tspan><tspan fill="#a4512b">0.25</tspan><tspan fill="#26262b">)</tspan></text>
+<text x="46" y="590" text-anchor="end" fill="#8f8a83" font-size="13">21</text>
+<text x="72" y="590"><tspan fill="#26262b">print(luna:greet())</tspan></text>
+</g>
+<circle cx="72" cy="622" r="5" fill="#a4512b"/>
+<text x="88" y="627" font-family="system-ui, sans-serif" font-size="13" fill="#a4512b">keywords</text>
+<circle cx="252" cy="622" r="5" fill="#2f6b9e"/>
+<text x="268" y="627" font-family="system-ui, sans-serif" font-size="13" fill="#2f6b9e">functions</text>
+<circle cx="432" cy="622" r="5" fill="#8559a0"/>
+<text x="448" y="627" font-family="system-ui, sans-serif" font-size="13" fill="#8559a0">types</text>
+<circle cx="612" cy="622" r="5" fill="#526d3d"/>
+<text x="628" y="627" font-family="system-ui, sans-serif" font-size="13" fill="#526d3d">strings</text>
+</svg>

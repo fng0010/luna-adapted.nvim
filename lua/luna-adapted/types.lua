@@ -1,0 +1,4 @@
+---@class luna_adapted.Highlight: vim.api.keyset.highlight
+---@field style? vim.api.keyset.highlight
+---@alias luna_adapted.Highlights table<string,luna_adapted.Highlight|string>
+---@alias luna_adapted.HighlightsFn fun(colors: LunaAdaptedPalette, opts:luna_adapted.Config):luna_adapted.Highlights

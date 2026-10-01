@@ -1,0 +1,63 @@
+*luna-adapted.txt*  Dark and light Luna in one Neovim colorscheme
+
+LUNA ADAPTED                                                 *luna-adapted*
+
+Requires Neovim 0.10+ and a true-color terminal. No dependencies.
+
+LOAD                                                    *luna-adapted-load*
+>
+    require("luna-adapted").setup({})
+    vim.cmd.colorscheme("luna-adapted")
+<
+Enables 'termguicolors'. Follows the current value of 'background'.
+
+VARIANTS                                            *luna-adapted-variants*
+>
+    :set background=dark
+    :set background=light
+<
+Changing background automatically reloads the same colorscheme with the
+selected palette. Dark preserves original Luna; light uses warm ivory.
+Editor, syntax, plugin and ANSI terminal colors follow the change.
+An appearance integration can update background to follow terminal appearance.
+
+OPTIONS                                                *luna-adapted-setup*
+>
+    require("luna-adapted").setup({
+      transparent = false,
+      accent = 1.0,
+      plugins = { all = true, auto = true },
+      on_colors = function(colors) end,
+      on_highlights = function(highlights, colors) end,
+    })
+<
+Reload the colorscheme after setup. Each setup merges with defaults.
+The same options and hooks apply when either variant loads.
+
+transparent     Remove principal editor, float and statusline backgrounds.
+                Functional surfaces (selection, diffs, menus) retain theirs.
+accent          0-1; 1 preserves syntax colors, 0 blends them into neutral ink.
+                Does not desaturate diagnostics or terminal ANSI colors.
+plugins.all     Enable all optional integrations (default true).
+plugins.auto    Detect lazy.nvim plugins when all is false (default true).
+plugins.NAME    Explicitly enable/disable by integration or plugin name,
+                e.g. telescope = false or ["telescope.nvim"] = false.
+on_colors       Customize a fresh active palette before blending/highlights.
+                Derived fields (git, diag, visual, cursor_line) may be edited
+                directly; changing base fields does not recompute them.
+on_highlights   Override generated highlights last. Takes highlights, colors.
+
+Use vim.o.background inside a hook for variant-specific customization.
+
+LUALINE                                              *luna-adapted-lualine*
+>
+    require("lualine").setup({ options = { theme = "luna-adapted" } })
+<
+Load the colorscheme first. The named theme follows variant changes.
+
+CREDITS                                              *luna-adapted-credits*
+
+Derived from WTFox/luna.nvim by A. Fox. MIT licensed; see LICENSE.
+Source revision: 727c19334528e1b8939f518d1ea43c4e62d98f91
+
+vim:tw=78:ts=8:noet:ft=help:norl:
