@@ -5,6 +5,36 @@ variants in one colorscheme**. The dark variant preserves Luna's original
 near-black palette and highlights. The light variant adapts its orange, blue,
 violet and sage accents to warm ivory surfaces with deeper, readable ink.
 
+## Install with LazyVim
+
+Requires **Neovim 0.10+** and a terminal with true-color support. No plugin
+dependencies are required.
+
+Add the following to `~/.config/nvim/lua/plugins/theme.lua`:
+
+```lua
+vim.o.background = "dark" -- use "light" for the light variant
+
+return {
+  {
+    "fng0010/luna-adapted.nvim",
+    main = "luna-adapted",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = { colorscheme = "luna-adapted" },
+  },
+}
+```
+
+Restart Neovim to let lazy.nvim install the theme. `main` tells lazy.nvim which
+module to use for `setup()`, and the LazyVim specification selects the colorscheme.
+Change `vim.o.background` in this file to choose the initial variant; subsequent
+background changes automatically update the active theme.
+
 ## Preview
 
 ### Dark
@@ -17,11 +47,6 @@ violet and sage accents to warm ivory surfaces with deeper, readable ink.
 
 _Previews generated from Neovim's Lua syntax highlights with the default
 palettes._
-
-## Install
-
-Requires **Neovim 0.10+** and a terminal with true-color support. No plugin
-dependencies are required.
 
 ## Choosing the variant
 
