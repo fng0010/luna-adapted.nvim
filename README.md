@@ -10,7 +10,6 @@ violet and sage accents to warm ivory surfaces with deeper, readable ink.
 Requires **Neovim 0.10+** and a terminal with true-color support. No plugin
 dependencies are required.
 
-Add the following to `~/.config/nvim/lua/plugins/theme.lua`:
 
 ```lua
 vim.o.background = "dark" -- use "light" for the light variant
@@ -30,10 +29,6 @@ return {
 }
 ```
 
-Restart Neovim to let lazy.nvim install the theme. `main` tells lazy.nvim which
-module to use for `setup()`, and the LazyVim specification selects the colorscheme.
-Change `vim.o.background` in this file to choose the initial variant; subsequent
-background changes automatically update the active theme.
 
 ## Preview
 
